@@ -40,3 +40,31 @@ a {
     color-scheme: dark;
   }
 }
+
+/* nav bar */
+/* styles/Home.module.css */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0070f3; /* Deep blue for the navbar background */
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navlink {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navlink:hover {
+  color: #ffcc00; /* Bright yellow on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
