@@ -1,0 +1,14 @@
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: aquamarine;
+    align-self: center;
+    justify-self: center;
+    gap: -10px;
+}
+
+.playingCard {
+    width: 10px;
+    height: 15px;
+}
