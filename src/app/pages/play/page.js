@@ -1,6 +1,7 @@
 import Card from '@/app/game/Card'
 import styles from './page.module.css'
-import PlayerHand from '@/app/components/PlayerHand';
+import { Suits } from '../../game/enums/Suits'
+import { Values } from '../../game/enums/Values'
 
 export default function Play() {
     // create 4 players
@@ -13,8 +14,7 @@ export default function Play() {
 
     return (
         <div>
-            
-            <Card suit="hearts" value = "ace" hidden={false} />
+            <Card suit={Suits.HEART} value = {Values.KING}/>
         </div>
     )
 }
