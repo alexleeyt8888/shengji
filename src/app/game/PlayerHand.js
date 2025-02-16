@@ -1,4 +1,4 @@
-import Card from "./Card";
+import Card from "../game/Card";
 import styles from './PlayerHand.module.css'
 
 export default function PlayerHand({ cards, playerName }) {

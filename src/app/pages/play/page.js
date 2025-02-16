@@ -1,4 +1,4 @@
-import Card from '@/app/components/Card'
+import Card from '@/app/game/Card'
 import styles from './page.module.css'
 import PlayerHand from '@/app/components/PlayerHand';
 
