@@ -1,0 +1,1 @@
+//game calls the board and the player to display the players and baord

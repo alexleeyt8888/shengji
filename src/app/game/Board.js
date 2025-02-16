@@ -1,0 +1,1 @@
+//Board needs to display the background, shuffle the deck, and distribute the cards to the players by sending it to the backend.

@@ -5,7 +5,7 @@ import styles from './PlayerHand.module.css'
 
 export default function Card({ key, suit, value, hidden }) {
     // var index = key;
-    
+
     return (
         // <div className="card">
         //     {/* '♠', '♥', '♦', '♣' */}
@@ -35,6 +35,7 @@ export default function Card({ key, suit, value, hidden }) {
                     style={{ '--index': key }}
                     className={styles.playingCard}
                 />}
+                
         </div>
     );
 }
