@@ -1,0 +1,4 @@
+/*
+main should call game
+and game should be able to create a new game
+*/

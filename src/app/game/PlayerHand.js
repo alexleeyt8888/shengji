@@ -1,3 +1,9 @@
+/*
+does not need to display anything
+properties:
+- array of cards
+- id
+*/
 import Card from "../game/Card";
 import styles from './PlayerHand.module.css'
 
