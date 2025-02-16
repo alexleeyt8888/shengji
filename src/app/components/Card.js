@@ -5,6 +5,7 @@ import styles from './PlayerHand.module.css'
 
 export default function Card({ key, suit, value, hidden }) {
     // var index = key;
+    
     return (
         // <div className="card">
         //     {/* '♠', '♥', '♦', '♣' */}

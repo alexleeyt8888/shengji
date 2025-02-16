@@ -3,16 +3,18 @@ import styles from './page.module.css'
 import PlayerHand from '@/app/components/PlayerHand';
 
 export default function Play() {
-    const playerCards = [
-        { value: '2', suit: 'hearts', hidden: false },
-        { value: '10', suit: 'spades', hidden: false },
-        { value: 'ace', suit: 'diamonds', hidden: false },
-        { value: 'king', suit: 'clubs', hidden: false },
-      ];
+    // create 4 players
+
+    // randomize deck and give each of the 4 players a set of cards - display the 4 cards
+
+    // display the 4 di pai
+
+
+
     return (
         <div>
             
-            <PlayerHand cards={playerCards} playerName="Alex"/>
+            <Card suit="hearts" value = "ace" hidden={false} />
         </div>
     )
 }
