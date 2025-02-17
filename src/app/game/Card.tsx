@@ -4,13 +4,13 @@ import { Suits } from './enums/Suits';
 import { Values } from './enums/Values';
 import styles from './PlayerHand.module.css'
 
-interface CardProps {
+export interface CardProps {
   suit: Suits;
   value: Values;
+  isTrump: boolean;
 }
 
-
-export default function Card({ suit, value}) {
+const Card: React.FC<CardProps> = ({ suit, value, isTrump}) => {
   return (
     <div>
       <Image
@@ -22,3 +22,5 @@ export default function Card({ suit, value}) {
     </div>
   );
 }
+
+export default Card
