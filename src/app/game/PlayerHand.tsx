@@ -8,6 +8,7 @@ properties:
 import styles from './PlayerHand.module.css'
 import Card, { CardProps } from './Card';
 import { useState } from 'react';
+import { Values, ValuesCode } from './enums/Values';
 
 // const PlayerHand: React.FC<{ hand: CardProps[] }> = ({ hand }) => {
 //     const [cards, setCards] = useState<CardProps[]>(hand);
@@ -48,12 +49,17 @@ export class PlayerHand {
     private hand: CardProps[];
     constructor(hand: CardProps[]) {
         this.hand = hand;
+        this.sortHand();
+    }
+
+    compareValues = (a: Values, b: Values): number => {
+        return ValuesCode[a] - ValuesCode[b];
     }
 
     sortHand(): void {
         this.hand.sort((a, b) => {
             if (a.suit === b.suit) {
-                return a.value.localeCompare(b.value);
+                return this.compareValues(a.value, b.value);
             }
             return a.suit.localeCompare(b.suit);
         });

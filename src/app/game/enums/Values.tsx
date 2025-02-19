@@ -1,5 +1,4 @@
-export const enum Values {
-  ACE = "ace",
+export enum Values {
   TWO = "2",
   THREE = "3",
   FOUR = "4",
@@ -12,6 +11,25 @@ export const enum Values {
   JACK = "jack",
   QUEEN = "queen",
   KING = "king",
+  ACE = "ace",
   SJOKER = "small_joker",
   BJOKER = "big_joker",
 }
+
+export const ValuesCode = {
+  [Values.TWO]: 1,
+  [Values.THREE]: 2,
+  [Values.FOUR]: 3,
+  [Values.FIVE]: 4,
+  [Values.SIX]: 5,
+  [Values.SEVEN]: 6,
+  [Values.EIGHT]: 7,
+  [Values.NINE]: 8,
+  [Values.TEN]: 9,
+  [Values.JACK]: 10,
+  [Values.QUEEN]: 11,
+  [Values.KING]: 12,
+  [Values.ACE]: 13,
+  [Values.SJOKER]: 13,
+  [Values.BJOKER]: 14,
+};

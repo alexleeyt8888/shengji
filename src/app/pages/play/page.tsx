@@ -4,6 +4,7 @@ import styles from './page.module.css'
 import { Suits } from '../../game/enums/Suits'
 import { Values } from '../../game/enums/Values'
 import PlayerHand from '../../game/PlayerHand'
+import { Player } from '../../game/Player'
 
 export default function Play() {
     // create 4 players
@@ -13,17 +14,17 @@ export default function Play() {
     // display the 4 di pai
 
     const cards: CardProps[] = [
+        { suit: Suits.HEART, value: Values.FIVE, isTrump: false },
+        { suit: Suits.HEART, value: Values.TEN, isTrump: true },
+        { suit: Suits.HEART, value: Values.KING, isTrump: false },
         { suit: Suits.HEART, value: Values.ACE, isTrump: false },
-        { suit: Suits.SPADE, value: Values.KING, isTrump: true },
-        { suit: Suits.DIAMOND, value: Values.TEN, isTrump: false },
-        { suit: Suits.CLUB, value: Values.QUEEN, isTrump: false },
-        { suit: Suits.HEART, value: Values.JACK, isTrump: true }
+        { suit: Suits.HEART, value: Values.TWO, isTrump: true }
     ];
     const hand: PlayerHand = new PlayerHand(cards);
-
+    const p1: Player = new Player(hand, "unknown pink", 1, 0);
     return (
         <div>
-            {hand.display()}
+            {p1.display()}
         </div>
     )
 }
