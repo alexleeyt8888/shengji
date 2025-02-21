@@ -18,7 +18,12 @@ export default function Play() {
         { suit: Suits.HEART, value: Values.TEN, isTrump: true },
         { suit: Suits.HEART, value: Values.KING, isTrump: false },
         { suit: Suits.HEART, value: Values.ACE, isTrump: false },
-        { suit: Suits.HEART, value: Values.TWO, isTrump: true }
+        { suit: Suits.HEART, value: Values.TWO, isTrump: true },
+        { suit: Suits.SPADE, value: Values.SIX, isTrump: false },
+        { suit: Suits.SPADE, value: Values.TEN, isTrump: true },
+        { suit: Suits.SPADE, value: Values.KING, isTrump: false },
+        { suit: Suits.SPADE, value: Values.ACE, isTrump: false },
+        { suit: Suits.SPADE, value: Values.TWO, isTrump: true }
     ];
     const hand: PlayerHand = new PlayerHand(cards);
     const p1: Player = new Player(hand, "unknown pink", 1, 0);
