@@ -14,7 +14,7 @@ export default function Play() {
     // display the 4 di pai
 
     const cards: CardProps[] = [
-        { suit: Suits.HEART, value: Values.FIVE, isTrump: false },
+        { suit: Suits.HEART, value: Values.SIX, isTrump: false },
         { suit: Suits.HEART, value: Values.TEN, isTrump: true },
         { suit: Suits.HEART, value: Values.KING, isTrump: false },
         { suit: Suits.HEART, value: Values.ACE, isTrump: false },
